@@ -25,7 +25,7 @@ A high-end, real-time weather station built with a **Go** microservice and a **S
 
 1.  **CORS & Networking:** Implemented a **Vite Proxy** bridge during development to resolve cross-origin issues between the Svelte dev server (:5173) and the Go API (:3000).
 2.  **Infrastructure as Code:** Configured `vercel.json` rewrites to map serverless Go functions to a unified `/api` endpoint, ensuring a clean URL structure.
-3.  **Resilience:** Handled regional API limitations and networking "Hells" (IPv6 vs IPv4) by standardizing local connections to `127.0.0.1`.
+3.  **Resilience:** Handled regional API limitations and networking "Hells" (IPv6 vs IPv4) by standardizing local connections to `IPv1.0.0.1`.
 
 ## 📖 Local Development
 
