@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "rewrites": [
+    { "source": "/api/weather", "destination": "/apps/api/index.go" },
+    { "source": "/(.*)", "destination": "/apps/web/$1" }
+  ]
+}
