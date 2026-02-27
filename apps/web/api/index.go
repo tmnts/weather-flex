@@ -1,8 +1,10 @@
 // @title Weather-Flex API
 // @version 1.0
 // @description This is a Go-powered weather proxy for OpenWeatherMap.
-// @host localhost:3000
-// @BasePath /
+// @contact.name Anna Shulik
+// @contact.url https://github.com/tmnts
+// @host weather-flex.vercel.app
+// @BasePath /api
 package handler // Vercel NEEDS this to be "handler"
 
 import (

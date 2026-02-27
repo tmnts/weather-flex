@@ -3,11 +3,14 @@
     "info": {
         "description": "This is a Go-powered weather proxy for OpenWeatherMap.",
         "title": "Weather-Flex API",
-        "contact": {},
+        "contact": {
+            "name": "Anna Shulik",
+            "url": "https://github.com/tmnts"
+        },
         "version": "1.0"
     },
-    "host": "localhost:3000",
-    "basePath": "/",
+    "host": "weather-flex.vercel.app",
+    "basePath": "/api",
     "paths": {
         "/weather": {
             "get": {

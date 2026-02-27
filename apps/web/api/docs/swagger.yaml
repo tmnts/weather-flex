@@ -1,7 +1,9 @@
-basePath: /
-host: localhost:3000
+basePath: /api
+host: weather-flex.vercel.app
 info:
-  contact: {}
+  contact:
+    name: Anna Shulik
+    url: https://github.com/tmnts
   description: This is a Go-powered weather proxy for OpenWeatherMap.
   title: Weather-Flex API
   version: "1.0"
