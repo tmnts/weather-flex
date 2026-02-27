@@ -1,4 +1,3 @@
-markdown
 # 🌦️ Weather-Flex: Full-Stack Monorepo MVP
 
 A high-end, real-time weather station built with a **Go** microservice and a **Svelte 5** reactive frontend. Designed for high performance, modularity, and aesthetic minimalism.
