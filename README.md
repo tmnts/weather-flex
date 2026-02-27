@@ -33,8 +33,24 @@ A high-end, real-time weather station built with a **Go** microservice and a **S
 3.  Run `pnpm install`.
 4.  Execute `pnpm dev` to start the Turborepo pipeline.
 
+## 📖 API Documentation (Swagger/OpenAPI)
+
+The backend is self-documenting via **Swagger UI**, providing an interactive sandbox for frontend consumers.
+
+- **Interactive UI:** [https://weather-flex.vercel.app](https://weather-flex.vercel.app)
+- **OpenAPI Specification:** Generated from Go source comments using `swag init`.
+
+### 🔄 Data Flow (Sequence)
+1. **Client** (Svelte 5) requests `/api/weather`.
+2. **Vercel** routes the request to the **Go Serverless Function**.
+3. **Go Middleware** checks for the `swagger` path; if absent, it invokes the Weather Handler.
+4. **Backend** fetches authenticated data from **OpenWeatherMap** (Server-to-Server).
+5. **JSON Response** is proxied back to the client, bypassing regional CORS restrictions.
+
 ---
-*Made with ❤️ for the 2026 Tech Scene.*# sv
+*Made with ❤️ for the 2026 Tech Scene.*# 
+
+SvelteKit 5 tutorial.
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
