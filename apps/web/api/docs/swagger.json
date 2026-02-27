@@ -7,7 +7,7 @@
             "name": "Anna Shulik",
             "url": "https://github.com/tmnts"
         },
-        "version": "1.0"
+        "version": "1.1"
     },
     "host": "weather-flex.vercel.app",
     "basePath": "/api",
