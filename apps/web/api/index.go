@@ -13,7 +13,7 @@ import (
 	"net/http"
 	"os"
 	"strings"
-	_ "weather-api/apps/web/swagger_docs"
+	_ "weather-api/swagger_docs"
 
 	httpSwagger "github.com/swaggo/swag/cmd/swag@latest"
 )
