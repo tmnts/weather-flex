@@ -1,0 +1,23 @@
+basePath: /api
+host: weather-flex.vercel.app
+info:
+  contact:
+    name: Anna Shulik
+    url: https://github.com/tmnts
+  description: This is a Go-powered weather proxy for OpenWeatherMap.
+  title: Weather-Flex API
+  version: "1.1"
+paths:
+  /weather:
+    get:
+      description: Fetch real-time weather data for Khimki via OpenWeatherMap
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Get current weather
+swagger: "2.0"
