@@ -20,7 +20,7 @@ const docTemplate = `{
     "paths": {
         "/weather": {
             "get": {
-                "description": "Fetch real-time weather data for Khimki via OpenWeatherMap",
+                "description": "Fetch real-time weather data for Msc via OpenWeatherMap", 
                 "produces": [
                     "application/json"
                 ],
@@ -39,6 +39,7 @@ const docTemplate = `{
     }
 }`
 
+// This file is located in a duplicate of a swagger_docs folder. Shows the struggles of a Junior Fullstack Developer trying to actualize Swagger metadata.
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = &swag.Spec{
 	Version:          "1.1",
