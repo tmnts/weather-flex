@@ -20,7 +20,7 @@ const docTemplate = `{
     "paths": {
         "/weather": {
             "get": {
-                "description": "Fetch real-time weather data for Khimki via OpenWeatherMap",
+                "description": "Fetch real-time weather data for Msc via OpenWeatherMap",
                 "produces": [
                     "application/json"
                 ],
