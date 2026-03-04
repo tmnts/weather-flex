@@ -50,45 +50,21 @@ The backend is self-documenting via **Swagger UI**, providing an interactive san
 ---
 *Made with ❤️ for the 2026 Tech Scene.*# 
 
-SvelteKit 5 tutorial.
+## Architecture Scheme (Mermaid)
+<pre> ```mermaid
+flowchart LR
+    subgraph Client
+        A[Svelte 5 UI]
+    end
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+    subgraph Backend
+        B[Go Microservice]
+        C[Domain Layer]
+        D[OpenWeather Adapter]
+    end
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```sh
-# create a new project
-npx sv create my-app
-```
-
-To recreate this project with the same configuration:
-
-```sh
-# recreate this project
-pnpm dlx sv create --template minimal --types ts --add tailwindcss="plugins:typography,forms" prettier --install pnpm ./
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+    A -->|REST| B
+    B --> C
+    C --> D
+    D -->|External API| E[(OpenWeather)] 
+</pre>``` 
