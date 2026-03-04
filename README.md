@@ -52,7 +52,7 @@ The backend is self-documenting via **Swagger UI**, providing an interactive san
 
 ## Architecture Scheme (Mermaid)
 
-```
+```mermaid
 flowchart LR
     subgraph Client
         A[Svelte 5 UI]
@@ -64,8 +64,8 @@ flowchart LR
         D[OpenWeather Adapter]
     end
 
-    A -->|REST| B
+    A -- REST --> B
     B --> C
     C --> D
-    D -->|External API| E[(OpenWeather)] 
+    D -- External API --> E[(OpenWeather)]
 ``` 
